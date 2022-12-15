@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <h2 style="text-align: center">Contact Us</h2>
+      </tr>
+      <tr>
+        <td>
+          <label for="firstname">Firstname</label>
+        </td>
+        <td>
+          <input
+            type="text"
+            id="firstname"
+            placeholder="Enter your firstname"
+            required
+          />
+        </td>
+        <td></td>
+        <td rowspan="3">
+          <label for="hobbies">Hobbies</label>
+        </td>
+        <td>
+          <label for="football">Football</label>
+        </td>
+        <td>
+          <input id="football" type="radio" name="football" value="football" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="lastname">Lastname</label>
+        </td>
+        <td colspan="2">
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Enter your lastname"
+            required
+          />
+        </td>
+        <td>
+          <label for="basketball">Basketball</label>
+        </td>
+        <td>
+          <input
+            id="basketball"
+            type="radio"
+            name="basketball"
+            value="basketball"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="gender">Gender</label>
+        </td>
+        <td colspan="2">
+          <label for="male">Male</label>
+          <input id="male" type="radio" name="gender" value="male" checked />
+
+          <label for="female">Female</label>
+          <input id="female" type="radio" name="gender" value="female" />
+        </td>
+
+        <td>
+          <label for="volleyball">Volleyball</label>
+        </td>
+        <td>
+          <input
+            id="volleyball"
+            type="radio"
+            name="volleyball"
+            value="volleyball"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="state">State</label>
+        </td>
+        <td>
+          <select name="state_value" id="state" style="width: 173px;">
+            <option value="Dortmund">Dortmund</option>
+            <option value="Düsseldorf">Düsseldorf</option>
+            <option value="Köln">Köln</option>
+          </select>
+        </td>
+        <td></td>
+        <td>
+          <label for="image">Profile image</label>
+        </td>
+        <td>
+          <input type="file" name="select_folder" id="image" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email</label>
+        </td>
+        <td>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter your email"
+          />
+        </td>
+        <td></td>
+        <td>
+          <label for="birthday">Birthday</label>
+        </td>
+        <td>
+          <input id="birthday" type="date" name="date_input" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="webpage">Personal Webpage</label>
+        </td>
+        <td>
+          <input
+            type="text"
+            name="webpage"
+            id="webpage"
+            placeholder="Enter your webpage"
+          />
+        </td>
+        <td></td>
+        <td>
+          <label for="address">Address</label>
+        </td>
+        <td>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="40"
+            rows="10"
+            placeholder="Enter your address"
+            style="resize: none"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="telephone">Telephone</label>
+        </td>
+        <td>
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone_input"
+            placeholder="XXX-XXX-XX-XX"
+            pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+          />
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <input type="button" value="Register" style="width: 150px; height: 40px;" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
